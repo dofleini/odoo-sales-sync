@@ -696,6 +696,338 @@
 
                             </div>
 
+                            <h2>Campos a enviar en 'Productos'</h2>
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="product_id"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'ID'" for="product_id"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="product_accessory_product_ids"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Productos de accesorio'" for="product_accessory_product_ids"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="product_active"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Activo'" for="product_active"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="product_activity_date_deadline"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Siguiente plazo de actividad'" for="product_activity_date_deadline"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="product_activity_exception_decoration"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Decoración de Actividad de Excepción'" for="product_activity_exception_decoration"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="product_activity_exception_icon"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Icono'" for="product_activity_exception_icon"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="product_activity_ids"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Actividades'" for="product_activity_ids"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="product_activity_state"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Estado de la actividad'" for="product_activity_state"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="product_activity_summary"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Resumen de la siguiente actividad'" for="product_activity_summary"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="product_activity_type_id"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Siguiente tipo de actividad'" for="product_activity_type_id"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="product_activity_user_id"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Usuario responsable'" for="product_activity_user_id"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="product_alternative_product_ids"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Productos alternativos'" for="product_alternative_product_ids"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="product_attribute_line_ids"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Atributos del producto'" for="product_attribute_line_ids"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="product_barcode"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Código de barras'" for="product_barcode"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="product_can_image_1024_be_zoomed"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Puede agrandarse la imagen 1024'" for="product_can_image_1024_be_zoomed"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="product_can_image_variant_1024_be_zoomed"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Can Variant Image 1024 be zoomed'" for="product_can_image_variant_1024_be_zoomed"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="product_can_publish"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Can Publish'" for="product_can_publish"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="product_categ_id"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Categoría de producto'" for="product_categ_id"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="product_code"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Referencia'" for="product_code"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="product_color"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Índice de Colores'" for="product_color"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="product_combination_indices"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Índices de combinación'" for="product_combination_indices"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="product_company_id"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Compañía'" for="product_company_id"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="product_cost_currency_id"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Moneda de Coste'" for="product_cost_currency_id"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="product_create_date"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Creado el'" for="product_create_date"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="product_create_uid"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Creado por'" for="product_create_uid"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="product_currency_id"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Moneda'" for="product_currency_id"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="product_default_code"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Referencia interna'" for="product_default_code"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="product_description"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Descripción'" for="product_description"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="product_description_purchase"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Descripción de compra'" for="product_description_purchase"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="product_description_sale"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Descripción de Ventas'" for="product_description_sale"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="product_display_name"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Nombre mostrado'" for="product_display_name"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="product_expense_policy"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Gastos de Re-factura'" for="product_expense_policy"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="product_has_configurable_attributes"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Es un producto configurable'" for="product_has_configurable_attributes"/>
+                                    </div>
+                                </div>
+                            </div>
+
                             <h2>Configuraciones Google Cloud</h2>
                             <div class="row mt16 o_settings_container">
                                 <div class="col-12 col-lg-6 o_setting_box">
@@ -737,6 +1069,7 @@
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </xpath>

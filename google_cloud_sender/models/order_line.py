@@ -209,7 +209,6 @@ class OrderLine(models.Model):
             header.append('line_qty_delivered_method')
 
         # Header del model sale.order
-
         show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.order_id', False)
         if show_column:
             header.append('order_id')
@@ -384,6 +383,160 @@ class OrderLine(models.Model):
         show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.order_medium_id', False)
         if show_column:
             header.append('order_medium_id')
+
+        # Header del model product.product
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_active', False)
+        if show_column:
+            header.append('product_active')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param(
+            'google_cloud_sender.product_activity_date_deadline', False)
+        if show_column:
+            header.append('product_activity_date_deadline')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param(
+            'google_cloud_sender.product_activity_exception_decoration', False)
+        if show_column:
+            header.append('product_activity_exception_decoration')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param(
+            'google_cloud_sender.product_activity_exception_icon', False)
+        if show_column:
+            header.append('product_activity_exception_icon')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_activity_ids',
+                                                                       False)
+        if show_column:
+            header.append('product_activity_ids')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_activity_state',
+                                                                       False)
+        if show_column:
+            header.append('product_activity_state')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_activity_summary',
+                                                                       False)
+        if show_column:
+            header.append('product_activity_summary')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_activity_type_id',
+                                                                       False)
+        if show_column:
+            header.append('product_activity_type_id')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_activity_user_id',
+                                                                       False)
+        if show_column:
+            header.append('product_activity_user_id')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param(
+            'google_cloud_sender.product_alternative_product_ids', False)
+        if show_column:
+            header.append('product_alternative_product_ids')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_attribute_line_ids',
+                                                                       False)
+        if show_column:
+            header.append('product_attribute_line_ids')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_barcode', False)
+        if show_column:
+            header.append('product_barcode')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param(
+            'google_cloud_sender.product_can_image_1024_be_zoomed', False)
+        if show_column:
+            header.append('product_can_image_1024_be_zoomed')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param(
+            'google_cloud_sender.product_can_image_variant_1024_be_zoomed', False)
+        if show_column:
+            header.append('product_can_image_variant_1024_be_zoomed')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_can_publish', False)
+        if show_column:
+            header.append('product_can_publish')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_categ_id', False)
+        if show_column:
+            header.append('product_categ_id')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_code', False)
+        if show_column:
+            header.append('product_code')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_color', False)
+        if show_column:
+            header.append('product_color')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param(
+            'google_cloud_sender.product_combination_indices', False)
+        if show_column:
+            header.append('product_combination_indices')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_company_id', False)
+        if show_column:
+            header.append('product_company_id')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_cost_currency_id',
+                                                                       False)
+        if show_column:
+            header.append('product_cost_currency_id')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_create_date', False)
+        if show_column:
+            header.append('product_create_date')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_create_uid', False)
+        if show_column:
+            header.append('product_create_uid')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_currency_id', False)
+        if show_column:
+            header.append('product_currency_id')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_default_code',
+                                                                       False)
+        if show_column:
+            header.append('product_default_code')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_description', False)
+        if show_column:
+            header.append('product_description')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param(
+            'google_cloud_sender.product_description_purchase', False)
+        if show_column:
+            header.append('product_description_purchase')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_description_sale',
+                                                                       False)
+        if show_column:
+            header.append('product_description_sale')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_display_name',
+                                                                       False)
+        if show_column:
+            header.append('product_display_name')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_expense_policy',
+                                                                       False)
+        if show_column:
+            header.append('product_expense_policy')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param(
+            'google_cloud_sender.product_has_configurable_attributes', False)
+        if show_column:
+            header.append('product_has_configurable_attributes')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_id', False)
+        if show_column:
+            header.append('product_id')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param(
+            'google_cloud_sender.product_accessory_product_ids', False)
+        if show_column:
+            header.append('product_accessory_product_ids')
 
         return header
 
@@ -745,5 +898,215 @@ class OrderLine(models.Model):
             vals['order_currency_rate'] = line.order_id.currency_rate
         elif column and not line.order_id.currency_rate:
             vals['order_currency_rate'] = ''
+
+        # Columnas del model product.product
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_active', False)
+        if column and line.product_id.active:
+            vals['product_active'] = line.product_id.active
+        elif column and not line.product_id.active:
+            vals['product_active'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_activity_date_deadline',
+                                                                  False)
+        if column and line.product_id.activity_date_deadline:
+            vals['product_activity_date_deadline'] = line.product_id.activity_date_deadline
+        elif column and not line.product_id.activity_date_deadline:
+            vals['product_activity_date_deadline'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param(
+            'google_cloud_sender.product_activity_exception_decoration', False)
+        if column and line.product_id.activity_exception_decoration:
+            vals['product_activity_exception_decoration'] = line.product_id.activity_exception_decoration
+        elif column and not line.product_id.activity_exception_decoration:
+            vals['product_activity_exception_decoration'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_activity_exception_icon',
+                                                                  False)
+        if column and line.product_id.activity_exception_icon:
+            vals['product_activity_exception_icon'] = line.product_id.activity_exception_icon
+        elif column and not line.product_id.activity_exception_icon:
+            vals['product_activity_exception_icon'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_activity_ids', False)
+        if column and line.product_id.activity_ids:
+            vals['product_activity_ids'] = line.product_id.activity_ids
+        elif column and not line.product_id.activity_ids:
+            vals['product_activity_ids'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_activity_state', False)
+        if column and line.product_id.activity_state:
+            vals['product_activity_state'] = line.product_id.activity_state
+        elif column and not line.product_id.activity_state:
+            vals['product_activity_state'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_activity_summary', False)
+        if column and line.product_id.activity_summary:
+            vals['product_activity_summary'] = line.product_id.activity_summary
+        elif column and not line.product_id.activity_summary:
+            vals['product_activity_summary'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_activity_type_id', False)
+        if column and line.product_id.activity_type_id:
+            vals['product_activity_type_id'] = line.product_id.activity_type_id
+        elif column and not line.product_id.activity_type_id:
+            vals['product_activity_type_id'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_activity_user_id', False)
+        if column and line.product_id.activity_user_id:
+            vals['product_activity_user_id'] = line.product_id.activity_user_id
+        elif column and not line.product_id.activity_user_id:
+            vals['product_activity_user_id'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_alternative_product_ids',
+                                                                  False)
+        if column and line.product_id.alternative_product_ids:
+            vals['product_alternative_product_ids'] = line.product_id.alternative_product_ids
+        elif column and not line.product_id.alternative_product_ids:
+            vals['product_alternative_product_ids'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_attribute_line_ids',
+                                                                  False)
+        if column and line.product_id.attribute_line_ids:
+            vals['product_attribute_line_ids'] = line.product_id.attribute_line_ids
+        elif column and not line.product_id.attribute_line_ids:
+            vals['product_attribute_line_ids'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_barcode', False)
+        if column and line.product_id.barcode:
+            vals['product_barcode'] = line.product_id.barcode
+        elif column and not line.product_id.barcode:
+            vals['product_barcode'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param(
+            'google_cloud_sender.product_can_image_1024_be_zoomed', False)
+        if column and line.product_id.can_image_1024_be_zoomed:
+            vals['product_can_image_1024_be_zoomed'] = line.product_id.can_image_1024_be_zoomed
+        elif column and not line.product_id.can_image_1024_be_zoomed:
+            vals['product_can_image_1024_be_zoomed'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param(
+            'google_cloud_sender.product_can_image_variant_1024_be_zoomed', False)
+        if column and line.product_id.can_image_variant_1024_be_zoomed:
+            vals['product_can_image_variant_1024_be_zoomed'] = line.product_id.can_image_variant_1024_be_zoomed
+        elif column and not line.product_id.can_image_variant_1024_be_zoomed:
+            vals['product_can_image_variant_1024_be_zoomed'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_can_publish', False)
+        if column and line.product_id.can_publish:
+            vals['product_can_publish'] = line.product_id.can_publish
+        elif column and not line.product_id.can_publish:
+            vals['product_can_publish'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_categ_id', False)
+        if column and line.product_id.categ_id:
+            vals['product_categ_id'] = line.product_id.categ_id.id
+        elif column and not line.product_id.categ_id:
+            vals['product_categ_id'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_code', False)
+        if column and line.product_id.code:
+            vals['product_code'] = line.product_id.code
+        elif column and not line.product_id.code:
+            vals['product_code'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_color', False)
+        if column and line.product_id.color:
+            vals['product_color'] = line.product_id.color
+        elif column and not line.product_id.color:
+            vals['product_color'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_combination_indices',
+                                                                  False)
+        if column and line.product_id.combination_indices:
+            vals['product_combination_indices'] = line.product_id.combination_indices
+        elif column and not line.product_id.combination_indices:
+            vals['product_combination_indices'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_company_id', False)
+        if column and line.product_id.company_id:
+            vals['product_company_id'] = line.product_id.company_id.id
+        elif column and not line.product_id.company_id:
+            vals['product_company_id'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_cost_currency_id', False)
+        if column and line.product_id.cost_currency_id:
+            vals['product_cost_currency_id'] = line.product_id.cost_currency_id.id
+        elif column and not line.product_id.cost_currency_id:
+            vals['product_cost_currency_id'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_create_date', False)
+        if column and line.product_id.create_date:
+            vals['product_create_date'] = line.product_id.create_date
+        elif column and not line.product_id.create_date:
+            vals['product_create_date'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_create_uid', False)
+        if column and line.product_id.create_uid:
+            vals['product_create_uid'] = line.product_id.create_uid.id
+        elif column and not line.product_id.create_uid:
+            vals['product_create_uid'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_currency_id', False)
+        if column and line.product_id.currency_id:
+            vals['product_currency_id'] = line.product_id.currency_id.name
+        elif column and not line.product_id.currency_id:
+            vals['product_currency_id'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_default_code', False)
+        if column and line.product_id.default_code:
+            vals['product_default_code'] = line.product_id.default_code
+        elif column and not line.product_id.default_code:
+            vals['product_default_code'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_description', False)
+        if column and line.product_id.description:
+            vals['product_description'] = line.product_id.description
+        elif column and not line.product_id.description:
+            vals['product_description'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_description_purchase',
+                                                                  False)
+        if column and line.product_id.description_purchase:
+            vals['product_description_purchase'] = line.product_id.description_purchase
+        elif column and not line.product_id.description_purchase:
+            vals['product_description_purchase'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_description_sale', False)
+        if column and line.product_id.description_sale:
+            vals['product_description_sale'] = line.product_id.description_sale
+        elif column and not line.product_id.description_sale:
+            vals['product_description_sale'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_display_name', False)
+        if column and line.product_id.display_name:
+            vals['product_display_name'] = line.product_id.display_name
+        elif column and not line.product_id.display_name:
+            vals['product_display_name'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_expense_policy', False)
+        if column and line.product_id.expense_policy:
+            vals['product_expense_policy'] = line.product_id.expense_policy
+        elif column and not line.product_id.expense_policy:
+            vals['product_expense_policy'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param(
+            'google_cloud_sender.product_has_configurable_attributes', False)
+        if column and line.product_id.has_configurable_attributes:
+            vals['product_has_configurable_attributes'] = line.product_id.has_configurable_attributes
+        elif column and not line.product_id.has_configurable_attributes:
+            vals['product_has_configurable_attributes'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_id', False)
+        if column and line.product_id.id:
+            vals['product_id'] = line.product_id.id
+        elif column and not line.product_id.id:
+            vals['product_id'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.product_accessory_product_ids',
+                                                                  False)
+        if column and line.product_id.accessory_product_ids:
+            vals['product_accessory_product_ids'] = line.product_id.accessory_product_ids
+        elif column and not line.product_id.accessory_product_ids:
+            vals['product_accessory_product_ids'] = ''
 
         return vals

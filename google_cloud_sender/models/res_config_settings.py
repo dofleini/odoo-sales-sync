@@ -49,7 +49,8 @@ class ResConfigSettings(models.TransientModel):
     order_access_url = fields.Boolean(config_parameter='google_cloud_sender.order_access_url')
     order_access_warning = fields.Boolean(config_parameter='google_cloud_sender.order_access_warning')
     order_activity_date_deadline = fields.Boolean(config_parameter='google_cloud_sender.order_activity_date_deadline')
-    order_activity_exception_decoration = fields.Boolean(config_parameter='google_cloud_sender.order_activity_exception_decoration')
+    order_activity_exception_decoration = fields.Boolean(
+        config_parameter='google_cloud_sender.order_activity_exception_decoration')
     order_activity_exception_icon = fields.Boolean(config_parameter='google_cloud_sender.order_activity_exception_icon')
     order_activity_ids = fields.Boolean(config_parameter='google_cloud_sender.order_activity_ids')
     order_activity_state = fields.Boolean(config_parameter='google_cloud_sender.order_activity_state')
@@ -62,10 +63,12 @@ class ResConfigSettings(models.TransientModel):
     order_amount_undiscounted = fields.Boolean(config_parameter='google_cloud_sender.order_amount_undiscounted')
     order_amount_untaxed = fields.Boolean(config_parameter='google_cloud_sender.order_amount_untaxed')
     order_analytic_account_id = fields.Boolean(config_parameter='google_cloud_sender.order_analytic_account_id')
-    order_authorized_transaction_ids = fields.Boolean(config_parameter='google_cloud_sender.order_authorized_transaction_ids')
+    order_authorized_transaction_ids = fields.Boolean(
+        config_parameter='google_cloud_sender.order_authorized_transaction_ids')
     order_campaign_id = fields.Boolean(config_parameter='google_cloud_sender.order_campaign_id')
     order_cart_quantity = fields.Boolean(config_parameter='google_cloud_sender.order_cart_quantity')
-    order_cart_recovery_email_sent = fields.Boolean(config_parameter='google_cloud_sender.order_cart_recovery_email_sent')
+    order_cart_recovery_email_sent = fields.Boolean(
+        config_parameter='google_cloud_sender.order_cart_recovery_email_sent')
     order_client_order_ref = fields.Boolean(config_parameter='google_cloud_sender.order_client_order_ref')
     order_commitment_date = fields.Boolean(config_parameter='google_cloud_sender.order_commitment_date')
     order_company_id = fields.Boolean(config_parameter='google_cloud_sender.order_company_id')
@@ -83,3 +86,51 @@ class ResConfigSettings(models.TransientModel):
     order_is_abandoned_cart = fields.Boolean(config_parameter='google_cloud_sender.order_is_abandoned_cart')
     order_is_expired = fields.Boolean(config_parameter='google_cloud_sender.order_is_expired')
     order_medium_id = fields.Boolean(config_parameter='google_cloud_sender.order_medium_id')
+
+    # Producto
+    product_active = fields.Boolean(config_parameter='google_cloud_sender.product_active')
+    product_activity_date_deadline = fields.Boolean(
+        config_parameter='google_cloud_sender.product_activity_date_deadline')
+    product_activity_exception_decoration = fields.Boolean(
+        config_parameter='google_cloud_sender.product_activity_exception_decoration')
+    product_activity_exception_icon = fields.Boolean(
+        config_parameter='google_cloud_sender.product_activity_exception_icon')
+    product_activity_ids = fields.Boolean(config_parameter='google_cloud_sender.product_activity_ids')
+    product_activity_state = fields.Boolean(config_parameter='google_cloud_sender.product_activity_state')
+    product_activity_summary = fields.Boolean(config_parameter='google_cloud_sender.product_activity_summary')
+    product_activity_type_id = fields.Boolean(config_parameter='google_cloud_sender.product_activity_type_id')
+    product_activity_user_id = fields.Boolean(config_parameter='google_cloud_sender.product_activity_user_id')
+    product_alternative_product_ids = fields.Boolean(
+        config_parameter='google_cloud_sender.product_alternative_product_ids')
+    product_attribute_line_ids = fields.Boolean(config_parameter='google_cloud_sender.product_attribute_line_ids')
+    product_barcode = fields.Boolean(config_parameter='google_cloud_sender.product_barcode')
+    product_can_image_1024_be_zoomed = fields.Boolean(
+        config_parameter='google_cloud_sender.product_can_image_1024_be_zoomed')
+    product_can_image_variant_1024_be_zoomed = fields.Boolean(
+        config_parameter='google_cloud_sender.product_can_image_variant_1024_be_zoomed')
+    product_can_publish = fields.Boolean(config_parameter='google_cloud_sender.product_can_publish')
+    product_categ_id = fields.Boolean(config_parameter='google_cloud_sender.product_categ_id')
+    product_code = fields.Boolean(config_parameter='google_cloud_sender.product_code')
+    product_color = fields.Boolean(config_parameter='google_cloud_sender.product_color')
+    product_combination_indices = fields.Boolean(config_parameter='google_cloud_sender.product_combination_indices')
+    product_company_id = fields.Boolean(config_parameter='google_cloud_sender.product_company_id')
+    product_cost_currency_id = fields.Boolean(config_parameter='google_cloud_sender.product_cost_currency_id')
+    product_create_date = fields.Boolean(config_parameter='google_cloud_sender.product_create_date')
+    product_create_uid = fields.Boolean(config_parameter='google_cloud_sender.product_create_uid')
+    product_currency_id = fields.Boolean(config_parameter='google_cloud_sender.product_currency_id')
+    product_default_code = fields.Boolean(config_parameter='google_cloud_sender.product_default_code')
+    product_description = fields.Boolean(config_parameter='google_cloud_sender.product_description')
+    product_description_purchase = fields.Boolean(config_parameter='google_cloud_sender.product_description_purchase')
+    product_description_sale = fields.Boolean(config_parameter='google_cloud_sender.product_description_sale')
+    product_display_name = fields.Boolean(config_parameter='google_cloud_sender.product_display_name')
+    product_expense_policy = fields.Boolean(config_parameter='google_cloud_sender.product_expense_policy')
+    product_has_configurable_attributes = fields.Boolean(
+        config_parameter='google_cloud_sender.product_has_configurable_attributes')
+    product_id = fields.Boolean(config_parameter='google_cloud_sender.product_id')
+    product_image_1024 = fields.Boolean(config_parameter='google_cloud_sender.product_image_1024')
+    product_image_128 = fields.Boolean(config_parameter='google_cloud_sender.product_image_128')
+    product_image_1920 = fields.Boolean(config_parameter='google_cloud_sender.product_image_1920')
+    product_image_256 = fields.Boolean(config_parameter='google_cloud_sender.product_image_256')
+    product_image_512 = fields.Boolean(config_parameter='google_cloud_sender.product_image_512')
+    product_image_variant_1024 = fields.Boolean(config_parameter='google_cloud_sender.product_image_variant_1024')
+    product_accessory_product_ids = fields.Boolean(config_parameter='google_cloud_sender.product_accessory_product_ids')
