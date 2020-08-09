@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="cloud_res_config_settings_view_form" model="ir.ui.view">
+            <field name="name">res.config.settings.view.form.inherit.tm</field>
+            <field name="model">res.config.settings</field>
+            <field name="priority" eval="40"/>
+            <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[hasclass('settings')]" position="inside">
+                    <div class="app_settings_block" data-string="Google Cloud" string="Google Cloud"
+                         data-key="google_cloud_menu">
+                        <div id="cron_repeat_min_config">
+                            <h2>Configuración de envíos de reporte</h2>
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_right_pane">
+                                        <label string="Intervalo de actualización" for="cron_repeat_min"/>
+                                        <div>
+                                            <field name="cron_repeat_min"/>
+                                            <div class="text-muted">
+                                                Intervalo de tiempo definido para enviar la información hacia Google
+                                                Cloud.
+                                                Este tiempo está expresado en minutos.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="action_account_config" model="ir.actions.act_window">
+            <field name="name">Ajustes</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.config.settings</field>
+            <field name="view_mode">form</field>
+            <field name="target">inline</field>
+            <field name="context">{'module' : 'google_cloud_sender'}</field>
+        </record>
+
+    </data>
+</odoo>
