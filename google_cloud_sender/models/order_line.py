@@ -31,12 +31,13 @@ class OrderLine(models.Model):
             for line in orders_lines:
                 writer.writerow(self.csv_line(line))
 
+        print("csv wrote")
         # self.send_csv_google_cloud('/tmp/google_cloud/data.csv')
 
     def csv_header(self):
         header = []
 
-        line_id = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.line_id', True)
+        line_id = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.line_id', False)
         if line_id:
             header.append('id')
 
@@ -46,7 +47,7 @@ class OrderLine(models.Model):
 
         vals = {}
 
-        line_id = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.line_id', True)
+        line_id = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.line_id', False)
         if line_id and line.id:
             vals['id'] = line.id
         elif line_id and not line.id:
