@@ -11,30 +11,297 @@
                     <div class="app_settings_block" data-string="Google Cloud" string="Google Cloud"
                          data-key="google_cloud_menu">
                         <div id="cron_repeat_min_config">
-                            <h2>Configuración de envíos de reporte</h2>
+                            <h2>Campos a enviar en 'Linea de productos'</h2>
 
                             <div class="row mt16 o_settings_container">
                                 <div class="col-12 col-lg-6 o_setting_box">
                                     <div class="o_setting_left_pane">
-                                        <field name="order_id"/>
+                                        <field name="line_id"/>
                                     </div>
                                     <div class="o_setting_right_pane">
-                                        <label string="Enviar en el reporte 'Order ID'" for="order_id"/>
-                                        <div class="text-muted">
-                                            Al seleccionar esta opción será enviado esta columna en el CSV.
-                                        </div>
+                                        <label string="ID" for="line_id"/>
                                     </div>
                                 </div>
 
                                 <div class="col-12 col-lg-6 o_setting_box">
                                     <div class="o_setting_left_pane">
-                                        <field name="name"/>
+                                        <field name="line_last_update"/>
                                     </div>
                                     <div class="o_setting_right_pane">
-                                        <label string="Enviar en el reporte 'Nombre Venta'" for="name"/>
-                                        <div class="text-muted">
-                                            Al seleccionar esta opción será enviado esta columna en el CSV.
-                                        </div>
+                                        <label string="Última modificación" for="line_last_update"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="line_company_id"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Compañía" for="line_company_id"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="line_create_date"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Fecha de creación" for="line_create_date"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="line_create_uid"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Creado por" for="line_create_uid"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="line_invoice_status"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Estado de la factura" for="line_invoice_status"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="line_currency_id"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Moneda" for="line_currency_id"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="line_customer_lead"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Plazo de entrega" for="line_customer_lead"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="line_discount"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Descuento %" for="line_discount"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="line_is_downpayment"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Es un pago anticipado" for="line_is_downpayment"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="line_display_name"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Nombre mostrado" for="line_display_name"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="line_display_type"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Tipo de pantalla" for="line_display_type"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="line_is_expense"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Es gasto" for="line_is_expense"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="line_name"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Descripción" for="line_name"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="line_name_short"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Nombre corto" for="line_name_short"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="line_price_reduce"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Reducción de precio" for="line_price_reduce"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="line_price_reduce_taxexcl"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Precio reducido sin IVA" for="line_price_reduce_taxexcl"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="line_price_reduce_taxinc"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Precio reducido con IVA" for="line_price_reduce_taxinc"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="line_price_subtotal"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Subtotal" for="line_price_subtotal"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="line_price_tax"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Total de impuestos" for="line_price_tax"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="line_price_total"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Total" for="line_price_total"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="line_price_unit"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Precio unitario" for="line_price_unit"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="line_product_uom"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Unidad de medida" for="line_product_uom"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="line_product_uom_category_id"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Categoría" for="line_product_uom_category_id"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="line_product_uom_qty"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Cantidad" for="line_product_uom_qty"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="line_product_updatable"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Puede editar producto" for="line_product_updatable"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="line_qty_delivered"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Cantidad Entregada" for="line_qty_delivered"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="line_qty_delivered_manual"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Entregado Manualmente" for="line_qty_delivered_manual"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="line_qty_delivered_method"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Método para actualizar la cantidad entregada"
+                                               for="line_qty_delivered_method"/>
                                     </div>
                                 </div>
                             </div>

@@ -21,27 +21,31 @@ class OrderLine(models.Model):
 
         with file:
 
-            f_names = ['product_id', 'product_uom_qty']
-            writer = csv.DictWriter(file, fieldnames=f_names)
+            writer = csv.DictWriter(file, fieldnames=self.csv_header())
             writer.writeheader()
 
             for line in orders_lines:
                 writer.writerow(self.csv_line(line))
+        print("csv wrote")
 
-    @staticmethod
-    def csv_line(line):
+    def csv_header(self):
+        header = []
+
+        line_id = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.line_id', False)
+        if line_id:
+            header += 'id'
+
+        return header
+
+    def csv_line(self, line):
 
         vals = {}
 
-        if line.product_id:
-            vals['product_id'] = line.product_id.name
-        else:
-            vals['product_id'] = ''
-
-        if line.product_uom_qty:
-            vals['product_uom_qty'] = line.product_uom_qty
-        else:
-            vals['product_uom_qty'] = ''
+        line_id = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.line_id', False)
+        if line_id and line.id:
+            vals['id'] = line.id
+        elif line_id and not line.id:
+            vals['id'] = ''
 
         return vals
 
