@@ -7,11 +7,5 @@ from odoo import api, fields, models, _
 class ResConfigSettings(models.TransientModel):
     _inherit = 'res.config.settings'
 
-    cron_repeat_min = fields.Integer(
-        string="Intervalo de actualización",
-        config_parameter='google_cloud_sender.cron_repeat_min',
-        help="Intervalo de tiempo definido para enviar la información hacia Google Cloud. Este tiempo está expresado "
-             "en minutos. "
-    )
-
-
+    order_id = fields.Boolean(string="Orden ID", config_parameter='google_cloud_sender.order_id')
+    name = fields.Boolean(string="Orden ID", config_parameter='google_cloud_sender.name')
