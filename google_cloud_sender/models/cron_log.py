@@ -10,5 +10,3 @@ class CronLog(models.Model):
 
     log = fields.Char('Log')
     type = fields.Char('Tipo', default='Info')
-
-

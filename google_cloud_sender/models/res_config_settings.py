@@ -139,8 +139,10 @@ class ResConfigSettings(models.TransientModel):
     client_active = fields.Boolean(config_parameter='google_cloud_sender.client_active')
     client_active_lang_count = fields.Boolean(config_parameter='google_cloud_sender.client_active_lang_count')
     client_activity_date_deadline = fields.Boolean(config_parameter='google_cloud_sender.client_activity_date_deadline')
-    client_activity_exception_decoration = fields.Boolean(config_parameter='google_cloud_sender.client_activity_exception_decoration')
-    client_activity_exception_icon = fields.Boolean(config_parameter='google_cloud_sender.client_activity_exception_icon')
+    client_activity_exception_decoration = fields.Boolean(
+        config_parameter='google_cloud_sender.client_activity_exception_decoration')
+    client_activity_exception_icon = fields.Boolean(
+        config_parameter='google_cloud_sender.client_activity_exception_icon')
     client_activity_ids = fields.Boolean(config_parameter='google_cloud_sender.client_activity_ids')
     client_activity_state = fields.Boolean(config_parameter='google_cloud_sender.client_activity_state')
     client_activity_summary = fields.Boolean(config_parameter='google_cloud_sender.client_activity_summary')
@@ -156,7 +158,8 @@ class ResConfigSettings(models.TransientModel):
     client_city = fields.Boolean(config_parameter='google_cloud_sender.client_city')
     client_color = fields.Boolean(config_parameter='google_cloud_sender.client_color')
     client_comment = fields.Boolean(config_parameter='google_cloud_sender.client_comment')
-    client_commercial_company_name = fields.Boolean(config_parameter='google_cloud_sender.client_commercial_company_name')
+    client_commercial_company_name = fields.Boolean(
+        config_parameter='google_cloud_sender.client_commercial_company_name')
     client_commercial_partner_id = fields.Boolean(config_parameter='google_cloud_sender.client_commercial_partner_id')
     client_company_id = fields.Boolean(config_parameter='google_cloud_sender.client_company_id')
     client_company_name = fields.Boolean(config_parameter='google_cloud_sender.client_company_name')

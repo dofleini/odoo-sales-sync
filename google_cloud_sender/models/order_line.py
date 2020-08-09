@@ -1293,19 +1293,22 @@ class OrderLine(models.Model):
         elif column and not line.order_partner_id.active_lang_count:
             vals['client_active_lang_count'] = ''
 
-        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_activity_date_deadline', False)
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_activity_date_deadline',
+                                                                  False)
         if column and line.order_partner_id.activity_date_deadline:
             vals['client_activity_date_deadline'] = line.order_partner_id.activity_date_deadline
         elif column and not line.order_partner_id.activity_date_deadline:
             vals['client_activity_date_deadline'] = ''
 
-        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_activity_exception_decoration', False)
+        column = self.env['ir.config_parameter'].sudo().get_param(
+            'google_cloud_sender.client_activity_exception_decoration', False)
         if column and line.order_partner_id.activity_exception_decoration:
             vals['client_activity_exception_decoration'] = line.order_partner_id.activity_exception_decoration
         elif column and not line.order_partner_id.activity_exception_decoration:
             vals['client_activity_exception_decoration'] = ''
 
-        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_activity_exception_icon', False)
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_activity_exception_icon',
+                                                                  False)
         if column and line.order_partner_id.activity_exception_icon:
             vals['client_activity_exception_icon'] = line.order_partner_id.activity_exception_icon
         elif column and not line.order_partner_id.activity_exception_icon:
@@ -1347,7 +1350,8 @@ class OrderLine(models.Model):
         elif column and not line.order_partner_id.additional_info:
             vals['client_additional_info'] = ''
 
-        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_bank_account_count', False)
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_bank_account_count',
+                                                                  False)
         if column and line.order_partner_id.bank_account_count:
             vals['client_bank_account_count'] = line.order_partner_id.bank_account_count
         elif column and not line.order_partner_id.bank_account_count:
@@ -1401,13 +1405,15 @@ class OrderLine(models.Model):
         elif column and not line.order_partner_id.comment:
             vals['client_comment'] = ''
 
-        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_commercial_company_name', False)
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_commercial_company_name',
+                                                                  False)
         if column and line.order_partner_id.commercial_company_name:
             vals['client_commercial_company_name'] = line.order_partner_id.commercial_company_name
         elif column and not line.order_partner_id.commercial_company_name:
             vals['client_commercial_company_name'] = ''
 
-        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_commercial_partner_id', False)
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_commercial_partner_id',
+                                                                  False)
         if column and line.order_partner_id.commercial_partner_id:
             vals['client_commercial_partner_id'] = line.order_partner_id.commercial_partner_id.id
         elif column and not line.order_partner_id.commercial_partner_id:

@@ -1061,7 +1061,8 @@
                                         <field name="client_activity_date_deadline"/>
                                     </div>
                                     <div class="o_setting_right_pane">
-                                        <label string="Siguiente plazo de actividad" for="client_activity_date_deadline"/>
+                                        <label string="Siguiente plazo de actividad"
+                                               for="client_activity_date_deadline"/>
                                     </div>
                                 </div>
 
@@ -1070,7 +1071,8 @@
                                         <field name="client_activity_exception_decoration"/>
                                     </div>
                                     <div class="o_setting_right_pane">
-                                        <label string="Decoración de Actividad de Excepción" for="client_activity_exception_decoration"/>
+                                        <label string="Decoración de Actividad de Excepción"
+                                               for="client_activity_exception_decoration"/>
                                     </div>
                                 </div>
                             </div>
@@ -1110,7 +1112,8 @@
                                         <field name="client_activity_summary"/>
                                     </div>
                                     <div class="o_setting_right_pane">
-                                        <label string="Resumen de la siguiente actividad" for="client_activity_summary"/>
+                                        <label string="Resumen de la siguiente actividad"
+                                               for="client_activity_summary"/>
                                     </div>
                                 </div>
                             </div>
@@ -1241,7 +1244,8 @@
                                         <field name="client_commercial_company_name"/>
                                     </div>
                                     <div class="o_setting_right_pane">
-                                        <label string="Entidad del nombre de la compañía" for="client_commercial_company_name"/>
+                                        <label string="Entidad del nombre de la compañía"
+                                               for="client_commercial_company_name"/>
                                     </div>
                                 </div>
 
