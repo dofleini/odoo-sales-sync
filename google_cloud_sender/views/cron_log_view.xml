@@ -1,22 +1,5 @@
 <odoo>
     <data>
-        <!--<record id="cron_log_form" model="ir.ui.view">
-            <field name="name">cron.log.form</field>
-            <field name="model">cron.log</field>
-            <field name="arch" type="xml">
-                <form string="Logs del Cron">
-                    <sheet>
-                        <group>
-                            <separator colspan="4" string="Logs del Cron"/>
-                            <group col="2" colspan="2">
-                                <field name="id"/>
-                                <field name="log"/>
-                            </group>
-                        </group>
-                    </sheet>
-                </form>
-            </field>
-        </record>-->
 
         <record id="cron_log_tree" model="ir.ui.view">
             <field name="name">cron.log.tree</field>

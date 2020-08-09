@@ -19,30 +19,25 @@ class OrderLine(models.Model):
 
     @api.model
     def send_resume(self):
-        directory_path = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
-        csv_path = os.path.join(directory_path, 'tabla.csv')
-
-        file = open(csv_path, 'w')
-
         orders_lines = self.env['sale.order.line'].search([])
 
-        with file:
+        csv_path = os.path.join('/tmp/google_cloud/', 'data.csv')
 
+        with open(csv_path, 'a+') as file:
             writer = csv.DictWriter(file, fieldnames=self.csv_header())
             writer.writeheader()
 
             for line in orders_lines:
                 writer.writerow(self.csv_line(line))
-        print("csv wrote")
 
-        self.send_csv_google_cloud('/tmp/google_cloud/csv')  # <-- PASA AQUI LA DIRECCION DEL ARCHIVO CSV EN LA CARPETA DONDE LO TIRASTE Y YA
+        # self.send_csv_google_cloud('/tmp/google_cloud/data.csv')
 
     def csv_header(self):
         header = []
 
-        line_id = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.line_id', False)
+        line_id = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.line_id', True)
         if line_id:
-            header += 'id'
+            header.append('id')
 
         return header
 
@@ -50,7 +45,7 @@ class OrderLine(models.Model):
 
         vals = {}
 
-        line_id = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.line_id', False)
+        line_id = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.line_id', True)
         if line_id and line.id:
             vals['id'] = line.id
         elif line_id and not line.id:
@@ -94,7 +89,8 @@ class OrderLine(models.Model):
                 'type': 'Info',
             })
 
-            make_file_public = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.make_file_public', False)
+            make_file_public = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.make_file_public',
+                                                                                False)
             if make_file_public:
                 blob.make_public()
                 url = blob.public_url
@@ -107,4 +103,3 @@ class OrderLine(models.Model):
                 'log': 'ERROR enviando fichero: %s' % str(e),
                 'type': 'Error',
             })
-
