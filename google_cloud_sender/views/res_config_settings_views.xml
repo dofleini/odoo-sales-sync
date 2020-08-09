@@ -25,10 +25,11 @@
 
                                 <div class="col-12 col-lg-6 o_setting_box">
                                     <div class="o_setting_left_pane">
-                                        <field name="line_last_update"/>
+                                        <field name="line_qty_delivered_method"/>
                                     </div>
                                     <div class="o_setting_right_pane">
-                                        <label string="Última modificación" for="line_last_update"/>
+                                        <label string="Método para actualizar la cantidad entregada"
+                                               for="line_qty_delivered_method"/>
                                     </div>
                                 </div>
                             </div>
@@ -294,26 +295,14 @@
                                 </div>
                             </div>
 
-                            <div class="row mt16 o_settings_container">
-                                <div class="col-12 col-lg-6 o_setting_box">
-                                    <div class="o_setting_left_pane">
-                                        <field name="line_qty_delivered_method"/>
-                                    </div>
-                                    <div class="o_setting_right_pane">
-                                        <label string="Método para actualizar la cantidad entregada"
-                                               for="line_qty_delivered_method"/>
-                                    </div>
-                                </div>
-                            </div>
-
                             <h2>Campos a enviar en 'Pedido de venta'</h2>
                             <div class="row mt16 o_settings_container">
                                 <div class="col-12 col-lg-6 o_setting_box">
                                     <div class="o_setting_left_pane">
-                                        <field name="order_last_update"/>
+                                        <field name="order_id"/>
                                     </div>
                                     <div class="o_setting_right_pane">
-                                        <label string="Enviar 'Última modificación en'" for="order_last_update"/>
+                                        <label string="Enviar 'ID'" for="order_id"/>
                                     </div>
                                 </div>
 
@@ -647,10 +636,10 @@
 
                                 <div class="col-12 col-lg-6 o_setting_box">
                                     <div class="o_setting_left_pane">
-                                        <field name="order_id"/>
+                                        <field name="order_medium_id"/>
                                     </div>
                                     <div class="o_setting_right_pane">
-                                        <label string="Enviar 'ID'" for="order_id"/>
+                                        <label string="Enviar 'Media'" for="order_medium_id"/>
                                     </div>
                                 </div>
                             </div>
@@ -702,15 +691,6 @@
                                     </div>
                                     <div class="o_setting_right_pane">
                                         <label string="Enviar 'Está expirado'" for="order_is_expired"/>
-                                    </div>
-                                </div>
-
-                                <div class="col-12 col-lg-6 o_setting_box">
-                                    <div class="o_setting_left_pane">
-                                        <field name="order_medium_id"/>
-                                    </div>
-                                    <div class="o_setting_right_pane">
-                                        <label string="Enviar 'Media'" for="order_medium_id"/>
                                     </div>
                                 </div>
 

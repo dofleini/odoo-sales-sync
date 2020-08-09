@@ -15,7 +15,6 @@ class ResConfigSettings(models.TransientModel):
 
     # linea de productos
     line_id = fields.Boolean(config_parameter='google_cloud_sender.line_id')
-    line_last_update = fields.Boolean(config_parameter='google_cloud_sender.line_last_update')
     line_company_id = fields.Boolean(config_parameter='google_cloud_sender.line_company_id')
     line_create_date = fields.Boolean(config_parameter='google_cloud_sender.line_create_date')
     line_create_uid = fields.Boolean(config_parameter='google_cloud_sender.line_create_uid')
@@ -30,35 +29,27 @@ class ResConfigSettings(models.TransientModel):
     line_name = fields.Boolean(config_parameter='google_cloud_sender.line_name')
     line_name_short = fields.Boolean(config_parameter='google_cloud_sender.line_name_short')
     line_price_reduce = fields.Boolean(config_parameter='google_cloud_sender.line_price_reduce')
-    line_price_reduce_taxexcl = fields.Boolean(config_parameter='google_cloud_sender.line_price_reduce_taxexcl',
-                                               default='True')
-    line_price_reduce_taxinc = fields.Boolean(config_parameter='google_cloud_sender.line_price_reduce_taxinc',
-                                              default='True')
+    line_price_reduce_taxexcl = fields.Boolean(config_parameter='google_cloud_sender.line_price_reduce_taxexcl')
+    line_price_reduce_taxinc = fields.Boolean(config_parameter='google_cloud_sender.line_price_reduce_taxinc')
     line_price_subtotal = fields.Boolean(config_parameter='google_cloud_sender.line_price_subtotal')
     line_price_tax = fields.Boolean(config_parameter='google_cloud_sender.line_price_tax')
     line_price_total = fields.Boolean(config_parameter='google_cloud_sender.line_price_total')
     line_price_unit = fields.Boolean(config_parameter='google_cloud_sender.line_price_unit')
     line_product_uom = fields.Boolean(config_parameter='google_cloud_sender.line_product_uom')
-    line_product_uom_category_id = fields.Boolean(config_parameter='google_cloud_sender.line_product_uom_category_id',
-                                                  default='True')
+    line_product_uom_category_id = fields.Boolean(config_parameter='google_cloud_sender.line_product_uom_category_id')
     line_product_uom_qty = fields.Boolean(config_parameter='google_cloud_sender.line_product_uom_qty')
-    line_product_updatable = fields.Boolean(config_parameter='google_cloud_sender.line_product_updatable',
-                                            default='True')
+    line_product_updatable = fields.Boolean(config_parameter='google_cloud_sender.line_product_updatable')
     line_qty_delivered = fields.Boolean(config_parameter='google_cloud_sender.line_qty_delivered')
-    line_qty_delivered_manual = fields.Boolean(config_parameter='google_cloud_sender.line_qty_delivered_manual',
-                                               default='True')
-    line_qty_delivered_method = fields.Boolean(config_parameter='google_cloud_sender.line_qty_delivered_method',
-                                               default='True')
+    line_qty_delivered_manual = fields.Boolean(config_parameter='google_cloud_sender.line_qty_delivered_manual')
+    line_qty_delivered_method = fields.Boolean(config_parameter='google_cloud_sender.line_qty_delivered_method')
 
     # Orden de venta
     order_id = fields.Boolean(config_parameter='google_cloud_sender.order_id')
-    order_last_update = fields.Boolean(config_parameter='google_cloud_sender.order_last_update')
     order_access_token = fields.Boolean(config_parameter='google_cloud_sender.order_access_token')
     order_access_url = fields.Boolean(config_parameter='google_cloud_sender.order_access_url')
     order_access_warning = fields.Boolean(config_parameter='google_cloud_sender.order_access_warning')
     order_activity_date_deadline = fields.Boolean(config_parameter='google_cloud_sender.order_activity_date_deadline')
-    order_activity_exception_decoration = fields.Boolean(
-        config_parameter='google_cloud_sender.order_activity_exception_decoration')
+    order_activity_exception_decoration = fields.Boolean(config_parameter='google_cloud_sender.order_activity_exception_decoration')
     order_activity_exception_icon = fields.Boolean(config_parameter='google_cloud_sender.order_activity_exception_icon')
     order_activity_ids = fields.Boolean(config_parameter='google_cloud_sender.order_activity_ids')
     order_activity_state = fields.Boolean(config_parameter='google_cloud_sender.order_activity_state')
@@ -71,12 +62,10 @@ class ResConfigSettings(models.TransientModel):
     order_amount_undiscounted = fields.Boolean(config_parameter='google_cloud_sender.order_amount_undiscounted')
     order_amount_untaxed = fields.Boolean(config_parameter='google_cloud_sender.order_amount_untaxed')
     order_analytic_account_id = fields.Boolean(config_parameter='google_cloud_sender.order_analytic_account_id')
-    order_authorized_transaction_ids = fields.Boolean(
-        config_parameter='google_cloud_sender.order_authorized_transaction_ids')
+    order_authorized_transaction_ids = fields.Boolean(config_parameter='google_cloud_sender.order_authorized_transaction_ids')
     order_campaign_id = fields.Boolean(config_parameter='google_cloud_sender.order_campaign_id')
     order_cart_quantity = fields.Boolean(config_parameter='google_cloud_sender.order_cart_quantity')
-    order_cart_recovery_email_sent = fields.Boolean(
-        config_parameter='google_cloud_sender.order_cart_recovery_email_sent')
+    order_cart_recovery_email_sent = fields.Boolean(config_parameter='google_cloud_sender.order_cart_recovery_email_sent')
     order_client_order_ref = fields.Boolean(config_parameter='google_cloud_sender.order_client_order_ref')
     order_commitment_date = fields.Boolean(config_parameter='google_cloud_sender.order_commitment_date')
     order_company_id = fields.Boolean(config_parameter='google_cloud_sender.order_company_id')
