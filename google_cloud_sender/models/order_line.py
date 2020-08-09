@@ -34,27 +34,6 @@ class OrderLine(models.Model):
         print("csv wrote")
         # self.send_csv_google_cloud('/tmp/google_cloud/data.csv')
 
-    def csv_header(self):
-        header = []
-
-        line_id = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.line_id', False)
-        if line_id:
-            header.append('id')
-
-        return header
-
-    def csv_line(self, line):
-
-        vals = {}
-
-        line_id = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.line_id', False)
-        if line_id and line.id:
-            vals['id'] = line.id
-        elif line_id and not line.id:
-            vals['id'] = ''
-
-        return vals
-
     def send_csv_google_cloud(self, file_path):
         company_id = self.env['res.company'].search([], limit=1)
         bucket = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.bucket', False)
@@ -105,3 +84,24 @@ class OrderLine(models.Model):
                 'log': 'ERROR enviando fichero: %s' % str(e),
                 'type': 'Error',
             })
+
+    def csv_header(self):
+        header = []
+
+        line_id = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.line_id', False)
+        if line_id:
+            header.append('id')
+
+        return header
+
+    def csv_line(self, line):
+
+        vals = {}
+
+        line_id = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.line_id', False)
+        if line_id and line.id:
+            vals['id'] = line.id
+        elif line_id and not line.id:
+            vals['id'] = ''
+
+        return vals
