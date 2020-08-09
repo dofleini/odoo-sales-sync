@@ -14,9 +14,9 @@
     'depends': ['website_sale'],
 
     'data': [
+        'data/cron.xml',
 
         'views/res_config_settings_views.xml',
-
         'views/menu.xml',
 
         'security/ir.model.access.csv'
