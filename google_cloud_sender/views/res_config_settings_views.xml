@@ -12,8 +12,9 @@
                          data-key="google_cloud_menu">
                         <div id="cron_repeat_min_config">
                             <h2>Configuración de envíos de reporte</h2>
+
                             <div class="row mt16 o_settings_container">
-                                <div class="col-12 col-lg-6 o_setting_box">
+                                <!--<div class="col-12 col-lg-6 o_setting_box">
                                     <div class="o_setting_right_pane">
                                         <label string="Intervalo de actualización" for="cron_repeat_min"/>
                                         <div>
@@ -25,8 +26,33 @@
                                             </div>
                                         </div>
                                     </div>
+                                </div>-->
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="order_id"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar en el reporte 'Order ID'" for="order_id"/>
+                                        <div class="text-muted">
+                                            Al seleccionar esta opción será enviado esta columna en el CSV.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="name"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar en el reporte 'Nombre Venta'" for="name"/>
+                                        <div class="text-muted">
+                                            Al seleccionar esta opción será enviado esta columna en el CSV.
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </xpath>

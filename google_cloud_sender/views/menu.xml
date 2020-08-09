@@ -1,6 +1,10 @@
 <?xml version="1.0"?>
 <odoo>
     <data>
-
+        <!-- Override Top menu item -->
+        <menuitem name="Google Cloud"
+                  id="menu_core"
+                  web_icon="google_cloud_sender,static/description/icon.png"
+                  sequence="0"/>
     </data>
 </odoo>
