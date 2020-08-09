@@ -17,6 +17,7 @@
         'data/cron.xml',
 
         'views/res_config_settings_views.xml',
+        'views/cron_log_view.xml',
         'views/menu.xml',
 
         'security/ir.model.access.csv'
@@ -25,6 +26,6 @@
     'demo': [],
 
     'installable': True,
-    'auto_install': False
-
+    'auto_install': False,
+    'application': True,
 }

@@ -306,6 +306,46 @@
                                 </div>
                             </div>
 
+                            <h2>Configuraciones Google Cloud</h2>
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Credenciales OAuth Json" for="credentials_json"/>
+                                        <field name="credentials_json"/>
+                                        <div class="text-muted">
+                                            Json con las credenciales OAuth en formato JSON para poder subir los archivs a Google Cloud Storage
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="make_file_public"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Públicar Ficheros" for="make_file_public"/>
+                                        <div class="text-muted">
+                                            Hacer los ficheros subidos a Google Clod públicos
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Bucket" for="bucket"/>
+                                        <field name="bucket"/>
+                                        <div class="text-muted">
+                                            Bucket de Google Cloud Storage
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </xpath>

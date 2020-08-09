@@ -6,5 +6,25 @@
                   id="menu_core"
                   web_icon="google_cloud_sender,static/description/icon.png"
                   sequence="0"/>
+
+        <menuitem id="menu_google_cloud"
+                  parent="menu_core"
+                  action="action_cron_log_view"
+                  sequence="1"/>
+
+        <record id="gc_config_action" model="ir.actions.act_window">
+            <field name="name">Configuraciones</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.config.settings</field>
+            <field name="view_mode">form</field>
+            <field name="target">inline</field>
+            <field name="context">{'module' : 'google_cloud_menu'}</field>
+        </record>
+
+        <menuitem id="menu_gc_config"
+                  name="Configuraciones"
+                  parent="menu_core"
+                  sequence="2"
+                  action="gc_config_action"/>
     </data>
 </odoo>

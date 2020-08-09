@@ -1,0 +1,56 @@
+<odoo>
+    <data>
+        <!--<record id="cron_log_form" model="ir.ui.view">
+            <field name="name">cron.log.form</field>
+            <field name="model">cron.log</field>
+            <field name="arch" type="xml">
+                <form string="Logs del Cron">
+                    <sheet>
+                        <group>
+                            <separator colspan="4" string="Logs del Cron"/>
+                            <group col="2" colspan="2">
+                                <field name="id"/>
+                                <field name="log"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>-->
+
+        <record id="cron_log_tree" model="ir.ui.view">
+            <field name="name">cron.log.tree</field>
+            <field name="model">cron.log</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree editable="bottom" string="Logs del Cron" create="0" delete="0" duplicate="0" decoration-danger="type == 'Error'" decoration-info="type == 'Info'">
+                    <field name="create_date" string="Fecha"/>
+                    <field name="log" readonly="1"/>
+                    <field name="type" readonly="1"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="cron_log_search" model="ir.ui.view">
+            <field name="name">cron.log.search</field>
+            <field name="model">cron.log</field>
+            <field eval="8" name="priority"/>
+            <field name="arch" type="xml">
+                <search string="Logs del Cron">
+                    <field name="create_date" string="Fecha"/>
+                    <field name="type"/>
+                </search>
+            </field>
+        </record>
+
+        <record id="action_cron_log_view" model="ir.actions.act_window">
+            <field name="name">Logs del Cron</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">cron.log</field>
+            <field name="search_view_id" ref="cron_log_search"/>
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+        </record>
+
+    </data>
+</odoo>

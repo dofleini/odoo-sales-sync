@@ -46,3 +46,8 @@ class ResConfigSettings(models.TransientModel):
 
     order_id = fields.Boolean(config_parameter='google_cloud_sender.order_id', default='True')
     name = fields.Boolean(config_parameter='google_cloud_sender.name', default='True')
+
+    credentials_json = fields.Binary('Credenciales OAuth Json', related='company_id.credentials_json', readonly=False)
+    make_file_public = fields.Boolean(string="Hacer el fichero público", config_parameter='google_cloud_sender.make_file_public')
+    bucket = fields.Char(string="Bucket", config_parameter='google_cloud_sender.bucket')
+
