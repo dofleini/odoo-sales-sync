@@ -21,9 +21,10 @@ class OrderLine(models.Model):
     def send_resume(self):
         orders_lines = self.env['sale.order.line'].search([])
 
-        csv_path = os.path.join('/tmp/google_cloud/', 'data.csv')
+        if not os.path.exists('/tmp/google_cloud'):
+            os.mkdir('/tmp/google_cloud')
 
-        with open(csv_path, 'a+') as file:
+        with open('/tmp/google_cloud/data.csv', 'w') as file:
             writer = csv.DictWriter(file, fieldnames=self.csv_header())
             writer.writeheader()
 
