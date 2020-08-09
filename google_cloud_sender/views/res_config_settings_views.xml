@@ -306,6 +306,416 @@
                                 </div>
                             </div>
 
+                            <h2>Campos a enviar en 'Pedido de venta'</h2>
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="order_last_update"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Última modificación en'" for="order_last_update"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="order_access_token"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Token de seguridad'" for="order_access_token"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="order_access_url"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'URL de acceso al portal'" for="order_access_url"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="order_access_warning"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar '	Alerta de acceso'" for="order_access_warning"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="order_activity_date_deadline"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Siguiente plazo de actividad'"
+                                               for="order_activity_date_deadline"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="order_activity_exception_decoration"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Decoración de Actividad de Excepción'"
+                                               for="order_activity_exception_decoration"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="order_activity_exception_icon"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Icono'" for="order_activity_exception_icon"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="order_activity_ids"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Actividades'" for="order_activity_ids"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="order_activity_state"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Estado de la actividad'" for="order_activity_state"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="order_activity_summary"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Resumen de la siguiente actividad'"
+                                               for="order_activity_summary"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="order_activity_type_id"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Siguiente tipo de actividad'"
+                                               for="order_activity_type_id"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="order_activity_user_id"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Usuario responsable'" for="order_activity_user_id"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="order_amount_by_group"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Importe del impuesto por grupo'"
+                                               for="order_amount_by_group"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="order_amount_tax"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Impuestos'" for="order_amount_tax"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="order_amount_total"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Total'" for="order_amount_total"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="order_amount_undiscounted"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Importe antes del descuento'"
+                                               for="order_amount_undiscounted"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="order_amount_untaxed"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Base imponible'" for="order_amount_untaxed"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="order_analytic_account_id"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Cuenta analítica'" for="order_analytic_account_id"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="order_authorized_transaction_ids"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Transacciones autorizadas'"
+                                               for="order_authorized_transaction_ids"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="order_campaign_id"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Campaña'" for="order_campaign_id"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="order_cart_quantity"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Cantidad en el carrito'" for="order_cart_quantity"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="order_cart_recovery_email_sent"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Correo electrónico de recuperación de carro ya enviado'"
+                                               for="order_cart_recovery_email_sent"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="order_client_order_ref"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Referencia cliente'" for="order_client_order_ref"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="order_commitment_date"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Fecha de entrega'" for="order_commitment_date"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="order_company_id"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Compañía'" for="order_company_id"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="order_create_date"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Fecha de Creación'" for="order_create_date"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="order_create_uid"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Creado por'" for="order_create_uid"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="order_currency_id"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Moneda'" for="order_currency_id"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="order_currency_rate"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Tasa monetaria'" for="order_currency_rate"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="order_date_order"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Fecha de pedido'" for="order_date_order"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="order_display_name"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Nombre mostrado'" for="order_display_name"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="order_expected_date"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Fecha prevista'" for="order_expected_date"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="order_fiscal_position_id"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Posición fiscal'" for="order_fiscal_position_id"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="order_id"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'ID'" for="order_id"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="order_invoice_count"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Recuento de facturas'" for="order_invoice_count"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="order_invoice_ids"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Facturas'" for="order_invoice_ids"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="order_invoice_status"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Estado factura'" for="order_invoice_status"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="order_is_abandoned_cart"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Carro abandonado'" for="order_is_abandoned_cart"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="order_is_expired"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Está expirado'" for="order_is_expired"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="order_medium_id"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Enviar 'Media'" for="order_medium_id"/>
+                                    </div>
+                                </div>
+
+                            </div>
+
                             <h2>Configuraciones Google Cloud</h2>
                             <div class="row mt16 o_settings_container">
                                 <div class="col-12 col-lg-6 o_setting_box">
@@ -316,7 +726,8 @@
                                         <label string="Credenciales OAuth Json" for="credentials_json"/>
                                         <field name="credentials_json"/>
                                         <div class="text-muted">
-                                            Json con las credenciales OAuth en formato JSON para poder subir los archivs a Google Cloud Storage
+                                            Json con las credenciales OAuth en formato JSON para poder subir los archivs
+                                            a Google Cloud Storage
                                         </div>
                                     </div>
                                 </div>
