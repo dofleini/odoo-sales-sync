@@ -538,6 +538,177 @@ class OrderLine(models.Model):
         if show_column:
             header.append('product_accessory_product_ids')
 
+        # Header del model res.partner
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_active', False)
+        if show_column:
+            header.append('client_active')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_active_lang_count',
+                                                                       False)
+        if show_column:
+            header.append('client_active_lang_count')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param(
+            'google_cloud_sender.client_activity_date_deadline', False)
+        if show_column:
+            header.append('client_activity_date_deadline')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param(
+            'google_cloud_sender.client_activity_exception_decoration', False)
+        if show_column:
+            header.append('client_activity_exception_decoration')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param(
+            'google_cloud_sender.client_activity_exception_icon', False)
+        if show_column:
+            header.append('client_activity_exception_icon')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_activity_ids', False)
+        if show_column:
+            header.append('client_activity_ids')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_activity_state',
+                                                                       False)
+        if show_column:
+            header.append('client_activity_state')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_activity_summary',
+                                                                       False)
+        if show_column:
+            header.append('client_activity_summary')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_activity_type_id',
+                                                                       False)
+        if show_column:
+            header.append('client_activity_type_id')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_activity_user_id',
+                                                                       False)
+        if show_column:
+            header.append('client_activity_user_id')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_additional_info',
+                                                                       False)
+        if show_column:
+            header.append('client_additional_info')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_bank_account_count',
+                                                                       False)
+        if show_column:
+            header.append('client_bank_account_count')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_bank_ids', False)
+        if show_column:
+            header.append('client_bank_ids')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_can_publish', False)
+        if show_column:
+            header.append('client_can_publish')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_category_id', False)
+        if show_column:
+            header.append('client_category_id')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_channel_ids', False)
+        if show_column:
+            header.append('client_channel_ids')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_child_ids', False)
+        if show_column:
+            header.append('client_child_ids')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_city', False)
+        if show_column:
+            header.append('client_city')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_color', False)
+        if show_column:
+            header.append('client_color')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_comment', False)
+        if show_column:
+            header.append('client_comment')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param(
+            'google_cloud_sender.client_commercial_company_name', False)
+        if show_column:
+            header.append('client_commercial_company_name')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param(
+            'google_cloud_sender.client_commercial_partner_id', False)
+        if show_column:
+            header.append('client_commercial_partner_id')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_company_id', False)
+        if show_column:
+            header.append('client_company_id')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_company_name', False)
+        if show_column:
+            header.append('client_company_name')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_company_type', False)
+        if show_column:
+            header.append('client_company_type')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_contact_address',
+                                                                       False)
+        if show_column:
+            header.append('client_contact_address')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_contract_ids', False)
+        if show_column:
+            header.append('client_contract_ids')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_country_id', False)
+        if show_column:
+            header.append('client_country_id')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_create_date', False)
+        if show_column:
+            header.append('client_create_date')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_create_uid', False)
+        if show_column:
+            header.append('client_create_uid')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_credit', False)
+        if show_column:
+            header.append('client_credit')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_credit_limit', False)
+        if show_column:
+            header.append('client_credit_limit')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_currency_id', False)
+        if show_column:
+            header.append('client_currency_id')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_customer_rank',
+                                                                       False)
+        if show_column:
+            header.append('client_customer_rank')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_date', False)
+        if show_column:
+            header.append('client_date')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_debit', False)
+        if show_column:
+            header.append('client_debit')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_debit_limit', False)
+        if show_column:
+            header.append('client_debit_limit')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_display_name', False)
+        if show_column:
+            header.append('client_display_name')
+
+        show_column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_email', False)
+        if show_column:
+            header.append('client_email')
+
         return header
 
     def csv_line(self, line):
@@ -1108,5 +1279,240 @@ class OrderLine(models.Model):
             vals['product_accessory_product_ids'] = line.product_id.accessory_product_ids
         elif column and not line.product_id.accessory_product_ids:
             vals['product_accessory_product_ids'] = ''
+
+        # Columnas del model sale.order.line
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_active', False)
+        if column and line.order_partner_id.active:
+            vals['client_active'] = line.order_partner_id.active
+        elif column and not line.order_partner_id.active:
+            vals['client_active'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_active_lang_count', False)
+        if column and line.order_partner_id.active_lang_count:
+            vals['client_active_lang_count'] = line.order_partner_id.active_lang_count
+        elif column and not line.order_partner_id.active_lang_count:
+            vals['client_active_lang_count'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_activity_date_deadline', False)
+        if column and line.order_partner_id.activity_date_deadline:
+            vals['client_activity_date_deadline'] = line.order_partner_id.activity_date_deadline
+        elif column and not line.order_partner_id.activity_date_deadline:
+            vals['client_activity_date_deadline'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_activity_exception_decoration', False)
+        if column and line.order_partner_id.activity_exception_decoration:
+            vals['client_activity_exception_decoration'] = line.order_partner_id.activity_exception_decoration
+        elif column and not line.order_partner_id.activity_exception_decoration:
+            vals['client_activity_exception_decoration'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_activity_exception_icon', False)
+        if column and line.order_partner_id.activity_exception_icon:
+            vals['client_activity_exception_icon'] = line.order_partner_id.activity_exception_icon
+        elif column and not line.order_partner_id.activity_exception_icon:
+            vals['client_activity_exception_icon'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_activity_ids', False)
+        if column and line.order_partner_id.activity_ids:
+            vals['client_activity_ids'] = line.order_partner_id.activity_ids
+        elif column and not line.order_partner_id.activity_ids:
+            vals['client_activity_ids'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_activity_state', False)
+        if column and line.order_partner_id.activity_state:
+            vals['client_activity_state'] = line.order_partner_id.activity_state
+        elif column and not line.order_partner_id.activity_state:
+            vals['client_activity_state'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_activity_summary', False)
+        if column and line.order_partner_id.activity_summary:
+            vals['client_activity_summary'] = line.order_partner_id.activity_summary
+        elif column and not line.order_partner_id.activity_summary:
+            vals['client_activity_summary'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_activity_type_id', False)
+        if column and line.order_partner_id.activity_type_id:
+            vals['client_activity_type_id'] = line.order_partner_id.activity_type_id.id
+        elif column and not line.order_partner_id.activity_type_id:
+            vals['client_activity_type_id'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_activity_user_id', False)
+        if column and line.order_partner_id.activity_user_id:
+            vals['client_activity_user_id'] = line.order_partner_id.activity_user_id.id
+        elif column and not line.order_partner_id.activity_user_id:
+            vals['client_activity_user_id'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_additional_info', False)
+        if column and line.order_partner_id.additional_info:
+            vals['client_additional_info'] = line.order_partner_id.additional_info
+        elif column and not line.order_partner_id.additional_info:
+            vals['client_additional_info'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_bank_account_count', False)
+        if column and line.order_partner_id.bank_account_count:
+            vals['client_bank_account_count'] = line.order_partner_id.bank_account_count
+        elif column and not line.order_partner_id.bank_account_count:
+            vals['client_bank_account_count'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_bank_ids', False)
+        if column and line.order_partner_id.bank_ids:
+            vals['client_bank_ids'] = line.order_partner_id.bank_ids
+        elif column and not line.order_partner_id.bank_ids:
+            vals['client_bank_ids'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_can_publish', False)
+        if column and line.order_partner_id.can_publish:
+            vals['client_can_publish'] = line.order_partner_id.can_publish
+        elif column and not line.order_partner_id.can_publish:
+            vals['client_can_publish'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_category_id', False)
+        if column and line.order_partner_id.category_id:
+            vals['client_category_id'] = line.order_partner_id.category_id
+        elif column and not line.order_partner_id.category_id:
+            vals['client_category_id'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_channel_ids', False)
+        if column and line.order_partner_id.channel_ids:
+            vals['client_channel_ids'] = line.order_partner_id.channel_ids
+        elif column and not line.order_partner_id.channel_ids:
+            vals['client_channel_ids'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_child_ids', False)
+        if column and line.order_partner_id.child_ids:
+            vals['client_child_ids'] = line.order_partner_id.child_ids
+        elif column and not line.order_partner_id.child_ids:
+            vals['client_child_ids'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_city', False)
+        if column and line.order_partner_id.city:
+            vals['client_city'] = line.order_partner_id.city
+        elif column and not line.order_partner_id.city:
+            vals['client_city'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_color', False)
+        if column and line.order_partner_id.color:
+            vals['client_color'] = line.order_partner_id.color
+        elif column and not line.order_partner_id.color:
+            vals['client_color'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_comment', False)
+        if column and line.order_partner_id.comment:
+            vals['client_comment'] = line.order_partner_id.comment
+        elif column and not line.order_partner_id.comment:
+            vals['client_comment'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_commercial_company_name', False)
+        if column and line.order_partner_id.commercial_company_name:
+            vals['client_commercial_company_name'] = line.order_partner_id.commercial_company_name
+        elif column and not line.order_partner_id.commercial_company_name:
+            vals['client_commercial_company_name'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_commercial_partner_id', False)
+        if column and line.order_partner_id.commercial_partner_id:
+            vals['client_commercial_partner_id'] = line.order_partner_id.commercial_partner_id.id
+        elif column and not line.order_partner_id.commercial_partner_id:
+            vals['client_commercial_partner_id'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_company_id', False)
+        if column and line.order_partner_id.company_id:
+            vals['client_company_id'] = line.order_partner_id.company_id.id
+        elif column and not line.order_partner_id.company_id:
+            vals['client_company_id'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_company_name', False)
+        if column and line.order_partner_id.company_name:
+            vals['client_company_name'] = line.order_partner_id.company_name
+        elif column and not line.order_partner_id.company_name:
+            vals['client_company_name'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_company_type', False)
+        if column and line.order_partner_id.company_type:
+            vals['client_company_type'] = line.order_partner_id.company_type
+        elif column and not line.order_partner_id.company_type:
+            vals['client_company_type'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_contact_address', False)
+        if column and line.order_partner_id.contact_address:
+            vals['client_contact_address'] = line.order_partner_id.contact_address
+        elif column and not line.order_partner_id.contact_address:
+            vals['client_contact_address'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_contract_ids', False)
+        if column and line.order_partner_id.contract_ids:
+            vals['client_contract_ids'] = line.order_partner_id.contract_ids
+        elif column and not line.order_partner_id.contract_ids:
+            vals['client_contract_ids'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_country_id', False)
+        if column and line.order_partner_id.country_id:
+            vals['client_country_id'] = line.order_partner_id.country_id.name
+        elif column and not line.order_partner_id.country_id:
+            vals['client_country_id'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_create_date', False)
+        if column and line.order_partner_id.create_date:
+            vals['client_create_date'] = line.order_partner_id.create_date
+        elif column and not line.order_partner_id.create_date:
+            vals['client_create_date'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_create_uid', False)
+        if column and line.order_partner_id.create_uid:
+            vals['client_create_uid'] = line.order_partner_id.create_uid.id
+        elif column and not line.order_partner_id.create_uid:
+            vals['client_create_uid'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_credit', False)
+        if column and line.order_partner_id.credit:
+            vals['client_credit'] = line.order_partner_id.credit
+        elif column and not line.order_partner_id.credit:
+            vals['client_credit'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_credit_limit', False)
+        if column and line.order_partner_id.credit_limit:
+            vals['client_credit_limit'] = line.order_partner_id.credit_limit
+        elif column and not line.order_partner_id.credit_limit:
+            vals['client_credit_limit'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_currency_id', False)
+        if column and line.order_partner_id.currency_id:
+            vals['client_currency_id'] = line.order_partner_id.currency_id.id
+        elif column and not line.order_partner_id.currency_id:
+            vals['client_currency_id'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_customer_rank', False)
+        if column and line.order_partner_id.customer_rank:
+            vals['client_customer_rank'] = line.order_partner_id.customer_rank
+        elif column and not line.order_partner_id.customer_rank:
+            vals['client_customer_rank'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_date', False)
+        if column and line.order_partner_id.date:
+            vals['client_date'] = line.order_partner_id.date
+        elif column and not line.order_partner_id.date:
+            vals['client_date'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_debit', False)
+        if column and line.order_partner_id.debit:
+            vals['client_debit'] = line.order_partner_id.debit
+        elif column and not line.order_partner_id.debit:
+            vals['client_debit'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_debit_limit', False)
+        if column and line.order_partner_id.debit_limit:
+            vals['client_debit_limit'] = line.order_partner_id.debit_limit
+        elif column and not line.order_partner_id.debit_limit:
+            vals['client_debit_limit'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_display_name', False)
+        if column and line.order_partner_id.display_name:
+            vals['client_display_name'] = line.order_partner_id.display_name
+        elif column and not line.order_partner_id.display_name:
+            vals['client_display_name'] = ''
+
+        column = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.client_email', False)
+        if column and line.order_partner_id.email:
+            vals['client_email'] = line.order_partner_id.email
+        elif column and not line.order_partner_id.email:
+            vals['client_email'] = ''
 
         return vals

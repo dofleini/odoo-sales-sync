@@ -732,7 +732,8 @@
                                         <field name="product_activity_date_deadline"/>
                                     </div>
                                     <div class="o_setting_right_pane">
-                                        <label string="Siguiente plazo de actividad" for="product_activity_date_deadline"/>
+                                        <label string="Siguiente plazo de actividad"
+                                               for="product_activity_date_deadline"/>
                                     </div>
                                 </div>
                             </div>
@@ -743,7 +744,8 @@
                                         <field name="product_activity_exception_decoration"/>
                                     </div>
                                     <div class="o_setting_right_pane">
-                                        <label string="Decoración de Actividad de Excepción" for="product_activity_exception_decoration"/>
+                                        <label string="Decoración de Actividad de Excepción"
+                                               for="product_activity_exception_decoration"/>
                                     </div>
                                 </div>
 
@@ -783,7 +785,8 @@
                                         <field name="product_activity_summary"/>
                                     </div>
                                     <div class="o_setting_right_pane">
-                                        <label string="Resumen de la siguiente actividad" for="product_activity_summary"/>
+                                        <label string="Resumen de la siguiente actividad"
+                                               for="product_activity_summary"/>
                                     </div>
                                 </div>
 
@@ -843,7 +846,8 @@
                                         <field name="product_can_image_1024_be_zoomed"/>
                                     </div>
                                     <div class="o_setting_right_pane">
-                                        <label string="Puede agrandarse la imagen 1024" for="product_can_image_1024_be_zoomed"/>
+                                        <label string="Puede agrandarse la imagen 1024"
+                                               for="product_can_image_1024_be_zoomed"/>
                                     </div>
                                 </div>
 
@@ -852,7 +856,8 @@
                                         <field name="product_can_image_variant_1024_be_zoomed"/>
                                     </div>
                                     <div class="o_setting_right_pane">
-                                        <label string="Can Variant Image 1024 be zoomed" for="product_can_image_variant_1024_be_zoomed"/>
+                                        <label string="Can Variant Image 1024 be zoomed"
+                                               for="product_can_image_variant_1024_be_zoomed"/>
                                     </div>
                                 </div>
                             </div>
@@ -1023,7 +1028,400 @@
                                         <field name="product_has_configurable_attributes"/>
                                     </div>
                                     <div class="o_setting_right_pane">
-                                        <label string="Es un producto configurable" for="product_has_configurable_attributes"/>
+                                        <label string="Es un producto configurable"
+                                               for="product_has_configurable_attributes"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h2>Campos a enviar en 'Productos'</h2>
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="client_active"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Activo" for="client_active"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="client_active_lang_count"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Active Lang Count" for="client_active_lang_count"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="client_activity_date_deadline"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Siguiente plazo de actividad" for="client_activity_date_deadline"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="client_activity_exception_decoration"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Decoración de Actividad de Excepción" for="client_activity_exception_decoration"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="client_activity_exception_icon"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Icono" for="client_activity_exception_icon"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="client_activity_ids"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Actividades" for="client_activity_ids"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="client_activity_state"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Estado de la actividad" for="client_activity_state"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="client_activity_summary"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Resumen de la siguiente actividad" for="client_activity_summary"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="client_activity_type_id"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Siguiente tipo de actividad" for="client_activity_type_id"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="client_activity_user_id"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Usuario responsable" for="client_activity_user_id"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="client_additional_info"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Información adicional" for="client_additional_info"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="client_bank_account_count"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Banco" for="client_bank_account_count"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="client_bank_ids"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Bancos" for="client_bank_ids"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="client_can_publish"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Puede publicar" for="client_can_publish"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="client_category_id"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Categorías" for="client_category_id"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="client_channel_ids"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Canales" for="client_channel_ids"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="client_child_ids"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Contacto" for="client_child_ids"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="client_city"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Ciudad" for="client_city"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="client_color"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Índice de Colores" for="client_color"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="client_comment"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Notas" for="client_comment"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="client_commercial_company_name"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Entidad del nombre de la compañía" for="client_commercial_company_name"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="client_commercial_partner_id"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Entidad comercial" for="client_commercial_partner_id"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="client_company_id"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Compañía" for="client_company_id"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="client_company_name"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Nombre de la compañía" for="client_company_name"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="client_company_type"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Tipo de compañía" for="client_company_type"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="client_contact_address"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Dirección completa" for="client_contact_address"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="client_contract_ids"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Contratos de la Empresa" for="client_contract_ids"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="client_country_id"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="País" for="client_country_id"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="client_create_date"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Creado el" for="client_create_date"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="client_create_uid"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Creado por" for="client_create_uid"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="client_credit"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Total a cobrar" for="client_credit"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="client_credit_limit"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Crédito límite	número" for="client_credit_limit"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="client_currency_id"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Moneda" for="client_currency_id"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="client_customer_rank"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Rango del Cliente" for="client_customer_rank"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="client_date"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Fecha" for="client_date"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="client_debit"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Total a pagar" for="client_debit"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="client_debit_limit"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Límite a pagar" for="client_debit_limit"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="client_display_name"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Nombre mostrado" for="client_display_name"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_left_pane">
+                                        <field name="client_email"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label string="Correo electrónico" for="client_email"/>
                                     </div>
                                 </div>
                             </div>
