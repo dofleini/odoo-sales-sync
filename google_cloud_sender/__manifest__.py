@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
 
-    'name': 'Google Cloud Sender',
+    'name': 'Odoo Sales Sync',
     'category': 'Sales/Sales',
 
     'summary': 'Envia los datos de tus ventas a Google Cloud Storage como CSV',
