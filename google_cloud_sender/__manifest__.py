@@ -6,14 +6,15 @@
 
     'summary': 'Envia los datos de tus ventas a Google Cloud Storage como CSV',
 
-    'version': '1.0',
+    'version': '1.01',
     'description': "Envia los datos de tus ventas a Google Cloud Storage como CSV",
 
     'author': "Jaco",
 
     'depends': ['website_sale'],
-
     "external_dependencies": {"python": ["gcloud"]},
+
+    "images": ['static/description/icon.png', 'static/images/thumbnail.png'],
 
     'data': [
         'data/cron.xml',
