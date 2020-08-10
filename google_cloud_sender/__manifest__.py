@@ -13,6 +13,8 @@
 
     'depends': ['website_sale'],
 
+    "external_dependencies": {"python": ["gcloud"]},
+
     'data': [
         'data/cron.xml',
 
