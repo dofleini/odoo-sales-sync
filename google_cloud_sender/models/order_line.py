@@ -17,9 +17,11 @@ from datetime import datetime as dt
 class OrderLine(models.Model):
     _inherit = 'sale.order.line'
 
+    enviado = fields.Boolean(default=False)
+
     @api.model
     def send_resume(self):
-        orders_lines = self.env['sale.order.line'].search([])
+        orders_lines = self.env['sale.order.line'].search([('enviado', '=', False)])
 
         if not os.path.exists('/tmp/google_cloud'):
             os.mkdir('/tmp/google_cloud')
@@ -31,9 +33,9 @@ class OrderLine(models.Model):
             for line in orders_lines:
                 writer.writerow(self.csv_line(line))
 
-        self.send_csv_google_cloud('/tmp/google_cloud/data.csv')
+        self.send_csv_google_cloud('/tmp/google_cloud/data.csv', orders_lines)
 
-    def send_csv_google_cloud(self, file_path):
+    def send_csv_google_cloud(self, file_path, orders_lines):
         company_id = self.env['res.company'].search([], limit=1)
         bucket = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.bucket', False)
 
@@ -78,6 +80,8 @@ class OrderLine(models.Model):
                     'log': 'Publicando fichero en URL: %s' % url,
                     'type': 'Info',
                 })
+
+            orders_lines.write({'enviado': True})
         except Exception as e:
             self.env['cron.log'].create({
                 'log': 'ERROR enviando fichero: %s' % str(e),

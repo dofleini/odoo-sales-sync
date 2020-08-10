@@ -6,7 +6,7 @@
             <field name="model">cron.log</field>
             <field name="type">tree</field>
             <field name="arch" type="xml">
-                <tree editable="bottom" string="Logs del Cron" create="0" delete="0" duplicate="0" decoration-danger="type == 'Error'" decoration-info="type == 'Info'">
+                <tree default_order="create_date desc" editable="bottom" string="Logs del Cron" create="0" delete="0" duplicate="0" decoration-danger="type == 'Error'" decoration-info="type == 'Info'">
                     <field name="create_date" string="Fecha"/>
                     <field name="log" readonly="1"/>
                     <field name="type" readonly="1"/>
