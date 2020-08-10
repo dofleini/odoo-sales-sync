@@ -31,8 +31,7 @@ class OrderLine(models.Model):
             for line in orders_lines:
                 writer.writerow(self.csv_line(line))
 
-        print("csv wrote")
-        # self.send_csv_google_cloud('/tmp/google_cloud/data.csv')
+        self.send_csv_google_cloud('/tmp/google_cloud/data.csv')
 
     def send_csv_google_cloud(self, file_path):
         company_id = self.env['res.company'].search([], limit=1)
