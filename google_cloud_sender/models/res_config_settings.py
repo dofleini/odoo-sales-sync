@@ -13,6 +13,9 @@ class ResConfigSettings(models.TransientModel):
                                       config_parameter='google_cloud_sender.make_file_public')
     bucket = fields.Char(string="Bucket", config_parameter='google_cloud_sender.bucket')
 
+    # file
+    file_path = fields.Char(string="Carpeta", config_parameter='google_cloud_sender.file_path')
+
     # linea de productos
     line_id = fields.Boolean(config_parameter='google_cloud_sender.line_id')
     line_company_id = fields.Boolean(config_parameter='google_cloud_sender.line_company_id')

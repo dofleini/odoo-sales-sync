@@ -21,19 +21,21 @@ class OrderLine(models.Model):
 
     @api.model
     def send_resume(self):
+
+        path = self.env['ir.config_parameter'].sudo().get_param('google_cloud_sender.file_path', '/tmp/google_cloud')
         orders_lines = self.env['sale.order.line'].search([('enviado', '=', False)])
 
-        if not os.path.exists('/tmp/google_cloud'):
-            os.mkdir('/tmp/google_cloud')
+        if not os.path.exists(path):
+            os.mkdir(path)
 
-        with open('/tmp/google_cloud/data.csv', 'w') as file:
+        with open(path + '/data.csv', 'w') as file:
             writer = csv.DictWriter(file, fieldnames=self.csv_header())
             writer.writeheader()
 
             for line in orders_lines:
                 writer.writerow(self.csv_line(line))
 
-        self.send_csv_google_cloud('/tmp/google_cloud/data.csv', orders_lines)
+        self.send_csv_google_cloud(path + '/data.csv', orders_lines)
 
     def send_csv_google_cloud(self, file_path, orders_lines):
         company_id = self.env['res.company'].search([], limit=1)
