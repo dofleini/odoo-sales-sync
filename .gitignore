@@ -10,3 +10,4 @@ __pycache__/
 .idea
 odoo.conf
 /google_cloud_sender/models/tabla.csv
+/google_cloud_sender/__pycache__
